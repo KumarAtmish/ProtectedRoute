@@ -1,3 +1,7 @@
+.page {
+  position: relative;
+  text-align: center;
+}
 .image {
   position: fixed;
   width: 100%;

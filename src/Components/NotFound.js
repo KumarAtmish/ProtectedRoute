@@ -4,8 +4,11 @@ import image from "../Components/Image/image.jpg";
 
 const NotFound = () => {
   return (
-    <div className="image">
-      <img src={image} />
+    <div>
+      <h4 className="page">Page Not Found</h4>
+      <div className="image">
+        <img src={image} />
+      </div>
     </div>
   );
 };
