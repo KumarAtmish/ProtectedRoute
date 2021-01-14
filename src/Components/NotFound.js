@@ -3,7 +3,7 @@ import "./NotFound.css";
 
 const NotFound = () => {
   return (
-    <div className="image">
+    <div className="page">
       <h1>Page Not Found</h1>
     </div>
   );
