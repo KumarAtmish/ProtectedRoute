@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { connect } from "react-redux";
 import { adminPassword } from "../validation";
 import { Redirect } from "react-router-dom";
+import { authLogin } from "../container/actionCreator";
 
 class Login extends React.Component {
   state = {
@@ -22,11 +23,8 @@ class Login extends React.Component {
         email === adminPassword.email &&
         password === adminPassword.password
       ) {
-        //alert("correct");
-        this.props.dispatch({
-          type: "LOGIN",
-          payload: true
-        });
+        console.log("dispatch", this.props);
+        this.props.dispatch(authLogin());
         this.setState({ redirect: true });
       } else {
         alert("email and Password is not correct");
